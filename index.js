@@ -1,4 +1,4 @@
-export default async function pMap(
+async function pMap(
 	iterable,
 	mapper,
 	{
@@ -162,7 +162,7 @@ export default async function pMap(
 	});
 }
 
-export function pMapIterable(
+function pMapIterable(
 	iterable,
 	mapper,
 	{
@@ -266,4 +266,12 @@ export function pMapIterable(
 	};
 }
 
-export const pMapSkip = Symbol('skip');
+const pMapSkip = Symbol('skip');
+
+
+module.exports = {
+	pMap,
+	pMapIterable,
+	pMapSkip,
+};
+
